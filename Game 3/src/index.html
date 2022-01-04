@@ -1,0 +1,52 @@
+<!DOCTYPE html><html><head>
+    <title>Editor</title>
+    <meta http-equiv="x-ua-compatible" content="ie=9">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="raphael-min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="MainPage">
+            <div class="MainPage_sub">
+                <h3>Match the Same Colors</h3>
+                <audio id="music" src="https://res.cloudinary.com/detnxqkmq/video/upload/v1618764660/pzcjv2vwnuopribr8bep.mp3"></audio>
+                <div id="timer"></div>
+                <div id="statement"></div>
+                <div class="container">
+                    <div class="leftSide">
+                        <p>
+                            <button class="leftbtn" style="color: green;" id="Green" name="leftSide" value="Green">🟩</button>
+                        </p>
+                        <p>
+                            <button class="leftbtn" style="color: blue;" id="Blue" name="leftSide" value="Blue">🔵</button>
+                        </p>
+                        <p>
+                            <button class="leftbtn" style="color: red;" id="Red" name="leftSide" value="Red">🔺</button>
+                        </p>
+                    </div>
+                    <div class="rightSide">
+                        <p>
+                            <button class="rightbtn" style="color: red;" id="Red1" name="rightSide" value="Red">🔴</button>
+                        </p>
+                        <p>
+                            <button class="rightbtn" style="color: blue;" id="Blue1" name="rightSide" value="Blue">🟦</button>
+                        </p>
+                        <p>
+                            <button class="rightbtn" style="color: green;" id="Green1" name="rightSide" value="Green">💚</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer" id="footer">
+                    <button onclick="checkresults()"> Check Result </button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./sketch.js"></script>
+
+
+</body></html>
